@@ -1,5 +1,4 @@
 **/node_modules/
 **/.sass-cache/
 assets/css/
-**/bundle.js
-
+dist/
