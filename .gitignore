@@ -1,2 +1,5 @@
-/**/node_modules/
-/**/.sass_cache/
+**/node_modules/
+**/.sass-cache/
+assets/css/
+**/bundle.js
+

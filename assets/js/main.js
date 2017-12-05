@@ -1,3 +1,5 @@
+"use strict";
+
 const mainContent = document.getElementById("main-content");
 const searchInput = document.getElementById("search");
 
@@ -44,7 +46,7 @@ const people = {
             }
         }
     ]
-}
+};
 
 people.people.forEach(person => {
     let card = getCard(person);
