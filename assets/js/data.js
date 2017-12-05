@@ -1,7 +1,7 @@
 "use strict";
 
+const view = require("./view");
 const mainContent = document.getElementById("main-content");
-const searchInput = document.getElementById("search");
 const people = {
     "people": [
         {
@@ -49,30 +49,9 @@ const people = {
 
 function populateCards() {
     people.people.forEach(person => {
-        let card = getCard(person);
+        let card = view.getCard(person);
         mainContent.innerHTML += card;
     });
-}
-
-function getCard(person) {
-    let card = `<person>
-        <header>
-            <h1>${person.name}</h1>
-            <h2>${person.title}</h2>
-        </header>
-        <section>
-            <div class="bio">
-                <img src="${person.image}">
-                ${person.bio}
-            </div>
-        </section>
-        <footer>
-            ${person.lifespan.birth}
-            &ndash;
-            ${person.lifespan.death == 0 ? '' : person.lifespan.death}
-        </footer>
-    </person>`;
-    return card;
 }
 
 module.exports = {populateCards};
