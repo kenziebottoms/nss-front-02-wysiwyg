@@ -13,7 +13,7 @@ body {
 person {
     padding: 1rem;
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px #ccc solid;
     border-radius: 3px;
     &:nth-child(even) {
         background: rgb(255, 255, 232);
@@ -29,5 +29,8 @@ person {
             float: right;
             width: 50%;
         }
+    }
+    &.active {
+        border-style: dashed;
     }
 } 

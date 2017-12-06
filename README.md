@@ -9,7 +9,7 @@
 1. :white_check_mark: For every even numbered element, have a light yellow background.
 1. :white_check_mark: For every odd numbered element, have a light blue background.
 1. :white_check_mark: Each element's DOM structure should be as shown below.
-1. When you click on one of the person elements, a dotted border should appear around it.
+1. :white_check_mark: When you click on one of the person elements, a dotted border should appear around it.
 1. When you click on one of the person elements, the text input should immediately gain focus so that you can start typing.
 1. When there is a highlighted person element, and you begin typing in the input box, the person's biography should be immediately bound to what you are typing, letter by letter.
 1. When you press the enter/return key when typing in the input field, then the content of the input field should immediately be blank.
