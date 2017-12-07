@@ -17,7 +17,7 @@ function addCard(person) {
     let p = document.createElement("p");
     let img = document.createElement("img");
     img.src = person.image;
-    p.appendChild(img);
+    bio.appendChild(img);
     p.innerHTML += person.bio;
     bio.appendChild(p);
     bio.classList = "bio";
