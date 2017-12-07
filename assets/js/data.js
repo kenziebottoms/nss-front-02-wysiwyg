@@ -49,8 +49,7 @@ const people = {
 
 function populateCards() {
     people.people.forEach(person => {
-        let card = view.getCard(person);
-        mainContent.innerHTML += card;
+        view.addCard(person);
     });
 }
 
