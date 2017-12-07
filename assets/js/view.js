@@ -9,7 +9,7 @@ function getCard(person) {
         <section>
             <div class="bio">
                 <img src="${person.image}">
-                ${person.bio}
+                <p>${person.bio}</p>
             </div>
         </section>
         <footer>

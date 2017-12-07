@@ -16,6 +16,11 @@ function focusCard(card) {
     });
     card.className = "active";
     textInput.focus();
+    textInput.addEventListener("keyup", () => {
+        let ps = card.getElementsByTagName("p");
+        let p = [...ps][0];
+        p.innerHTML = textInput.value;
+    });
 }
 
 module.exports = {activateEvents};
