@@ -12,7 +12,7 @@
 1. :white_check_mark: When you click on one of the person elements, a dotted border should appear around it.
 1. :white_check_mark: When you click on one of the person elements, the text input should immediately gain focus so that you can start typing.
 1. :white_check_mark: When there is a highlighted person element, and you begin typing in the input box, the person's biography should be immediately bound to what you are typing, letter by letter.
-1. When you press the enter/return key when typing in the input field, then the content of the input field should immediately be blank.
+1. :white_check_mark: When you press the enter/return key when typing in the input field, then the content of the input field should immediately be blank.
 
 
 ##### Sample Person Element & Children

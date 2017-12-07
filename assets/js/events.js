@@ -13,27 +13,34 @@ function activateEvents() {
             setActiveCard(null);
         } else {
             let card = getActiveCard();
-            let ps = card.getElementsByTagName("p");
-            let p = [...ps][0];
-            p.innerHTML = textInput.value;
+            if (card != null) {
+                let ps = card.getElementsByTagName("p");
+                let p = [...ps][0];
+                p.innerHTML = textInput.value;
+            }
         }
     });
 }
 
 function focusCard(card) {
-    // add .active to this card and remove it from all other cards
-    let activeElements = [...document.getElementsByClassName("active")];
-    activeElements.forEach(element => {
-        element.classList.remove("active");
-    });
-    card.className = "active";
     // bond input with .bio
     textInput.focus();
     setActiveCard(card);
 }
 
 function setActiveCard(card) {
-    activeCard = card;
+    textInput.value = "";
+    let activeElements = [...document.getElementsByClassName("active")];
+    activeElements.forEach(element => {
+        element.classList.remove("active");
+    });
+    if (card) {
+        // add .active to this card and remove it from all other cards
+        card.className = "active";
+        activeCard = card;
+    } else {
+        activeCard = null;
+    }
 }
 function getActiveCard() {
     return activeCard;
